@@ -2,7 +2,7 @@
 '''
 Created on 2015年10月11日
 
-@FileName: G:/GitBackup/Python/Tieba/Tieba_sign/Tieba_sign.py
+@FileName: Tieba_sign/Tieba_sign.py
 
 @Description: (描述) 
 
@@ -75,7 +75,6 @@ def Sign(name):
         return 0
 
 def Get_Html(url):
-    #headers["Cookie"] = {'BDUSS':'prTUZVQXpFM3NqNWxRdy1WYWZ0dmhhZzE3cjNrOTl-QXZ6TnA2eXBoeEd-RUZXQVFBQUFBJCQAAAAAAAAAAAEAAAAVLRQDMzUzNDYzNjkyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEZvGlZGbxpWZl',}
     cookies = dict(BDUSS=cookie)
     r = requests.get(url, headers=headers, cookies=cookies)
     print 'status code: ',r.status_code
